@@ -6,11 +6,26 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXFileReference section */
+		93FCDA7E1EC2B64E00272E7A /* GSMarkupParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GSMarkupParser.h; path = GSMarkupParser/GSMarkupParser.h; sourceTree = "<group>"; };
+		93FCDA7F1EC2B64E00272E7A /* GSMarkupParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GSMarkupParser.m; path = GSMarkupParser/GSMarkupParser.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		93FCDA761EC2B4B800272E7A = {
 			isa = PBXGroup;
 			children = (
+				93FCDA7D1EC2B61B00272E7A /* GSMarkupParser */,
 			);
+			sourceTree = "<group>";
+		};
+		93FCDA7D1EC2B61B00272E7A /* GSMarkupParser */ = {
+			isa = PBXGroup;
+			children = (
+				93FCDA7E1EC2B64E00272E7A /* GSMarkupParser.h */,
+				93FCDA7F1EC2B64E00272E7A /* GSMarkupParser.m */,
+			);
+			name = GSMarkupParser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
