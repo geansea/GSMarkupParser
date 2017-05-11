@@ -37,7 +37,7 @@
 #pragma mark - NSTableViewDataSource
 
 - (CGFloat)tableView:(NSTableView *)tableView heightOfRow:(NSInteger)row {
-    return 50;
+    return 48;
 }
 
 #pragma mark - NSTableViewDataSource
