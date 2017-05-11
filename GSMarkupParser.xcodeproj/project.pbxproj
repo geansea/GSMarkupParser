@@ -6,16 +6,46 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		93FCDA891EC3FB1C00272E7A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FCDA881EC3FB1C00272E7A /* AppDelegate.m */; };
+		93FCDA8C1EC3FB1C00272E7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FCDA8B1EC3FB1C00272E7A /* main.m */; };
+		93FCDA8F1EC3FB1C00272E7A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FCDA8E1EC3FB1C00272E7A /* ViewController.m */; };
+		93FCDA911EC3FB1C00272E7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93FCDA901EC3FB1C00272E7A /* Assets.xcassets */; };
+		93FCDA941EC3FB1C00272E7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93FCDA921EC3FB1C00272E7A /* Main.storyboard */; };
+		93FCDA991EC3FB4C00272E7A /* GSMarkupParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FCDA7F1EC2B64E00272E7A /* GSMarkupParser.m */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		93FCDA7E1EC2B64E00272E7A /* GSMarkupParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GSMarkupParser.h; path = GSMarkupParser/GSMarkupParser.h; sourceTree = "<group>"; };
 		93FCDA7F1EC2B64E00272E7A /* GSMarkupParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GSMarkupParser.m; path = GSMarkupParser/GSMarkupParser.m; sourceTree = "<group>"; };
+		93FCDA841EC3FB1C00272E7A /* GSMarkupParserDemo_macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GSMarkupParserDemo_macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93FCDA871EC3FB1C00272E7A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		93FCDA881EC3FB1C00272E7A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		93FCDA8B1EC3FB1C00272E7A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		93FCDA8D1EC3FB1C00272E7A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		93FCDA8E1EC3FB1C00272E7A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		93FCDA901EC3FB1C00272E7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93FCDA931EC3FB1C00272E7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		93FCDA951EC3FB1C00272E7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93FCDA811EC3FB1C00272E7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		93FCDA761EC2B4B800272E7A = {
 			isa = PBXGroup;
 			children = (
 				93FCDA7D1EC2B61B00272E7A /* GSMarkupParser */,
+				93FCDA861EC3FB1C00272E7A /* GSMarkupParserDemo_macOS */,
+				93FCDA851EC3FB1C00272E7A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -28,13 +58,70 @@
 			name = GSMarkupParser;
 			sourceTree = "<group>";
 		};
+		93FCDA851EC3FB1C00272E7A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93FCDA841EC3FB1C00272E7A /* GSMarkupParserDemo_macOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93FCDA861EC3FB1C00272E7A /* GSMarkupParserDemo_macOS */ = {
+			isa = PBXGroup;
+			children = (
+				93FCDA871EC3FB1C00272E7A /* AppDelegate.h */,
+				93FCDA881EC3FB1C00272E7A /* AppDelegate.m */,
+				93FCDA8D1EC3FB1C00272E7A /* ViewController.h */,
+				93FCDA8E1EC3FB1C00272E7A /* ViewController.m */,
+				93FCDA901EC3FB1C00272E7A /* Assets.xcassets */,
+				93FCDA921EC3FB1C00272E7A /* Main.storyboard */,
+				93FCDA951EC3FB1C00272E7A /* Info.plist */,
+				93FCDA8A1EC3FB1C00272E7A /* Supporting Files */,
+			);
+			path = GSMarkupParserDemo_macOS;
+			sourceTree = "<group>";
+		};
+		93FCDA8A1EC3FB1C00272E7A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				93FCDA8B1EC3FB1C00272E7A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93FCDA831EC3FB1C00272E7A /* GSMarkupParserDemo_macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93FCDA961EC3FB1C00272E7A /* Build configuration list for PBXNativeTarget "GSMarkupParserDemo_macOS" */;
+			buildPhases = (
+				93FCDA801EC3FB1C00272E7A /* Sources */,
+				93FCDA811EC3FB1C00272E7A /* Frameworks */,
+				93FCDA821EC3FB1C00272E7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GSMarkupParserDemo_macOS;
+			productName = GSMarkupParserDemo_macOS;
+			productReference = 93FCDA841EC3FB1C00272E7A /* GSMarkupParserDemo_macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		93FCDA771EC2B4B800272E7A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0830;
+				TargetAttributes = {
+					93FCDA831EC3FB1C00272E7A = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 93FCDA7A1EC2B4B800272E7A /* Build configuration list for PBXProject "GSMarkupParser" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -42,14 +129,54 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 93FCDA761EC2B4B800272E7A;
+			productRefGroup = 93FCDA851EC3FB1C00272E7A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				93FCDA831EC3FB1C00272E7A /* GSMarkupParserDemo_macOS */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93FCDA821EC3FB1C00272E7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93FCDA911EC3FB1C00272E7A /* Assets.xcassets in Resources */,
+				93FCDA941EC3FB1C00272E7A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93FCDA801EC3FB1C00272E7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93FCDA8F1EC3FB1C00272E7A /* ViewController.m in Sources */,
+				93FCDA8C1EC3FB1C00272E7A /* main.m in Sources */,
+				93FCDA991EC3FB4C00272E7A /* GSMarkupParser.m in Sources */,
+				93FCDA891EC3FB1C00272E7A /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		93FCDA921EC3FB1C00272E7A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93FCDA931EC3FB1C00272E7A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		93FCDA7B1EC2B4B800272E7A /* Debug */ = {
@@ -64,6 +191,107 @@
 			};
 			name = Release;
 		};
+		93FCDA971EC3FB1C00272E7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = GSMarkupParserDemo_macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.geansea.GSMarkupParserDemo-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		93FCDA981EC3FB1C00272E7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = GSMarkupParserDemo_macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.geansea.GSMarkupParserDemo-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -75,6 +303,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		93FCDA961EC3FB1C00272E7A /* Build configuration list for PBXNativeTarget "GSMarkupParserDemo_macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93FCDA971EC3FB1C00272E7A /* Debug */,
+				93FCDA981EC3FB1C00272E7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
