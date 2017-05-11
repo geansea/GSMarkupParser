@@ -13,6 +13,12 @@
 		93FCDA911EC3FB1C00272E7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93FCDA901EC3FB1C00272E7A /* Assets.xcassets */; };
 		93FCDA941EC3FB1C00272E7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93FCDA921EC3FB1C00272E7A /* Main.storyboard */; };
 		93FCDA991EC3FB4C00272E7A /* GSMarkupParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FCDA7F1EC2B64E00272E7A /* GSMarkupParser.m */; };
+		93FCDAA21EC44F8400272E7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FCDAA11EC44F8400272E7A /* main.m */; };
+		93FCDAA51EC44F8400272E7A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FCDAA41EC44F8400272E7A /* AppDelegate.m */; };
+		93FCDAA81EC44F8400272E7A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FCDAA71EC44F8400272E7A /* ViewController.m */; };
+		93FCDAAB1EC44F8400272E7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93FCDAA91EC44F8400272E7A /* Main.storyboard */; };
+		93FCDAAD1EC44F8400272E7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93FCDAAC1EC44F8400272E7A /* Assets.xcassets */; };
+		93FCDAB01EC44F8400272E7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93FCDAAE1EC44F8400272E7A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,10 +33,27 @@
 		93FCDA901EC3FB1C00272E7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93FCDA931EC3FB1C00272E7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		93FCDA951EC3FB1C00272E7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93FCDA9E1EC44F8400272E7A /* GSMarkupParserDemo_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GSMarkupParserDemo_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93FCDAA11EC44F8400272E7A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		93FCDAA31EC44F8400272E7A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		93FCDAA41EC44F8400272E7A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		93FCDAA61EC44F8400272E7A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		93FCDAA71EC44F8400272E7A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		93FCDAAA1EC44F8400272E7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		93FCDAAC1EC44F8400272E7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93FCDAAF1EC44F8400272E7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		93FCDAB11EC44F8400272E7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		93FCDA811EC3FB1C00272E7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93FCDA9B1EC44F8400272E7A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +68,7 @@
 			children = (
 				93FCDA7D1EC2B61B00272E7A /* GSMarkupParser */,
 				93FCDA861EC3FB1C00272E7A /* GSMarkupParserDemo_macOS */,
+				93FCDA9F1EC44F8400272E7A /* GSMarkupParserDemo_iOS */,
 				93FCDA851EC3FB1C00272E7A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				93FCDA841EC3FB1C00272E7A /* GSMarkupParserDemo_macOS.app */,
+				93FCDA9E1EC44F8400272E7A /* GSMarkupParserDemo_iOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,6 +114,30 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		93FCDA9F1EC44F8400272E7A /* GSMarkupParserDemo_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				93FCDAA31EC44F8400272E7A /* AppDelegate.h */,
+				93FCDAA41EC44F8400272E7A /* AppDelegate.m */,
+				93FCDAA61EC44F8400272E7A /* ViewController.h */,
+				93FCDAA71EC44F8400272E7A /* ViewController.m */,
+				93FCDAA91EC44F8400272E7A /* Main.storyboard */,
+				93FCDAAC1EC44F8400272E7A /* Assets.xcassets */,
+				93FCDAAE1EC44F8400272E7A /* LaunchScreen.storyboard */,
+				93FCDAB11EC44F8400272E7A /* Info.plist */,
+				93FCDAA01EC44F8400272E7A /* Supporting Files */,
+			);
+			path = GSMarkupParserDemo_iOS;
+			sourceTree = "<group>";
+		};
+		93FCDAA01EC44F8400272E7A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				93FCDAA11EC44F8400272E7A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,6 +158,23 @@
 			productReference = 93FCDA841EC3FB1C00272E7A /* GSMarkupParserDemo_macOS.app */;
 			productType = "com.apple.product-type.application";
 		};
+		93FCDA9D1EC44F8400272E7A /* GSMarkupParserDemo_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93FCDAB21EC44F8400272E7A /* Build configuration list for PBXNativeTarget "GSMarkupParserDemo_iOS" */;
+			buildPhases = (
+				93FCDA9A1EC44F8400272E7A /* Sources */,
+				93FCDA9B1EC44F8400272E7A /* Frameworks */,
+				93FCDA9C1EC44F8400272E7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GSMarkupParserDemo_iOS;
+			productName = GSMarkupParserDemo_iOS;
+			productReference = 93FCDA9E1EC44F8400272E7A /* GSMarkupParserDemo_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -118,6 +184,10 @@
 				LastUpgradeCheck = 0830;
 				TargetAttributes = {
 					93FCDA831EC3FB1C00272E7A = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					93FCDA9D1EC44F8400272E7A = {
 						CreatedOnToolsVersion = 8.3.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -137,6 +207,7 @@
 			projectRoot = "";
 			targets = (
 				93FCDA831EC3FB1C00272E7A /* GSMarkupParserDemo_macOS */,
+				93FCDA9D1EC44F8400272E7A /* GSMarkupParserDemo_iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -148,6 +219,16 @@
 			files = (
 				93FCDA911EC3FB1C00272E7A /* Assets.xcassets in Resources */,
 				93FCDA941EC3FB1C00272E7A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93FCDA9C1EC44F8400272E7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93FCDAB01EC44F8400272E7A /* LaunchScreen.storyboard in Resources */,
+				93FCDAAD1EC44F8400272E7A /* Assets.xcassets in Resources */,
+				93FCDAAB1EC44F8400272E7A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +246,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		93FCDA9A1EC44F8400272E7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93FCDAA81EC44F8400272E7A /* ViewController.m in Sources */,
+				93FCDAA51EC44F8400272E7A /* AppDelegate.m in Sources */,
+				93FCDAA21EC44F8400272E7A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -174,6 +265,22 @@
 				93FCDA931EC3FB1C00272E7A /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		93FCDAA91EC44F8400272E7A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93FCDAAA1EC44F8400272E7A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		93FCDAAE1EC44F8400272E7A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93FCDAAF1EC44F8400272E7A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -292,6 +399,108 @@
 			};
 			name = Release;
 		};
+		93FCDAB31EC44F8400272E7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = GSMarkupParserDemo_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.geansea.GSMarkupParserDemo-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		93FCDAB41EC44F8400272E7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = GSMarkupParserDemo_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.geansea.GSMarkupParserDemo-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -309,6 +518,14 @@
 			buildConfigurations = (
 				93FCDA971EC3FB1C00272E7A /* Debug */,
 				93FCDA981EC3FB1C00272E7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		93FCDAB21EC44F8400272E7A /* Build configuration list for PBXNativeTarget "GSMarkupParserDemo_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93FCDAB31EC44F8400272E7A /* Debug */,
+				93FCDAB41EC44F8400272E7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
