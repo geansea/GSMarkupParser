@@ -19,6 +19,7 @@
 		93FCDAAB1EC44F8400272E7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93FCDAA91EC44F8400272E7A /* Main.storyboard */; };
 		93FCDAAD1EC44F8400272E7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93FCDAAC1EC44F8400272E7A /* Assets.xcassets */; };
 		93FCDAB01EC44F8400272E7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93FCDAAE1EC44F8400272E7A /* LaunchScreen.storyboard */; };
+		93FCDAB51EC4508600272E7A /* GSMarkupParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FCDA7F1EC2B64E00272E7A /* GSMarkupParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -252,6 +253,7 @@
 			files = (
 				93FCDAA81EC44F8400272E7A /* ViewController.m in Sources */,
 				93FCDAA51EC44F8400272E7A /* AppDelegate.m in Sources */,
+				93FCDAB51EC4508600272E7A /* GSMarkupParser.m in Sources */,
 				93FCDAA21EC44F8400272E7A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,7 +345,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = GSMarkupParserDemo_macOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.geansea.GSMarkupParserDemo-macOS";
@@ -391,7 +393,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = GSMarkupParserDemo_macOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.geansea.GSMarkupParserDemo-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -442,7 +444,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = GSMarkupParserDemo_iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -490,7 +492,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = GSMarkupParserDemo_iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.geansea.GSMarkupParserDemo-iOS";

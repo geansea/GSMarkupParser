@@ -267,6 +267,9 @@ typedef NSMutableDictionary<NSString *, NSString *> SpanDict;
 #pragma mark Color
 
 + (GSColor *)colorFromHex:(NSString *)hex {
+    if (0 == hex.length) {
+        return nil;
+    }
     unsigned hexValue = 0;
     if (![[NSScanner scannerWithString:hex] scanHexInt:&hexValue]) {
         return nil;
