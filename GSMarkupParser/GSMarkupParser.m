@@ -103,9 +103,9 @@ typedef NSMutableDictionary<NSString *, NSString *> SpanDict;
     // Default attributes
     //
     NSDictionary<NSString *, id> *defaultAttributes = @{
-                                                        NSFontAttributeName : [GSFont systemFontOfSize:17],
-                                                        NSForegroundColorAttributeName : [GSColor blackColor],
-                                                        };
+        NSFontAttributeName : [GSFont systemFontOfSize:16],
+        NSForegroundColorAttributeName : [GSColor blackColor],
+    };
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:_string attributes:defaultAttributes];
     //
     // Span attributes
@@ -297,12 +297,12 @@ typedef NSMutableDictionary<NSString *, NSString *> SpanDict;
 
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary<NSString *, NSString *> *)attributeDict {
     SpanDict *spanDict = [SpanDict dictionary];
-    // name
+    // Name
     [spanDict setObject:elementName forKey:GSSpanDictNameKey];
-    // range
+    // Range
     NSRange range = NSMakeRange(_string.length, 0);
     [spanDict setObject:NSStringFromRange(range) forKey:GSSpanDictRangeKey];
-    // attributes
+    // Attributes
     [spanDict addEntriesFromDictionary:attributeDict];
     // Push
     [_spans addObject:spanDict];
