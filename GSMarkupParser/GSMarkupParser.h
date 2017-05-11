@@ -10,4 +10,9 @@
 
 @interface GSMarkupParser : NSObject
 
++ (NSAttributedString *)attributedStringFromMarkupText:(NSString *)text;
+
+- (instancetype)initWithMarkupText:(NSString *)text;
+- (NSAttributedString *)attributedString;
+
 @end
