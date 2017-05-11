@@ -60,10 +60,10 @@
         return cell;
     }
     if (0 == indexPath.row % 2) {
-        cell.backgroundColor = [UIColor whiteColor];
+        cell.backgroundColor = [[UIColor lightGrayColor] colorWithAlphaComponent:0.3];
         cell.textLabel.attributedText = [GSMarkupParser attributedStringFromMarkupText:_markupTexts[indexPath.row / 2]];
     } else {
-        cell.backgroundColor = [[UIColor lightGrayColor] colorWithAlphaComponent:0.3];
+        cell.backgroundColor = [UIColor whiteColor];
         cell.textLabel.text = _markupTexts[indexPath.row / 2];
     }
     return cell;
