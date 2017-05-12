@@ -1,4 +1,5 @@
 language: objective-c
 osx_image: xcode8.3
-xcode_project: GSMarkupParser.xcodeproj
-xcode_scheme: GSMarkupParserDemo_macOS
+script:
+    - xcodebuild clean && xcodebuild build -project GSMarkupParser.xcodeproj -scheme GSMarkupParserDemo_macOS -sdk macosx10.8
+    - xcodebuild clean && xcodebuild build -project GSMarkupParser.xcodeproj -scheme GSMarkupParserDemo_iOS -sdk iphonesimulator8.1 CODE_SIGNING_REQUIRED=NO
