@@ -170,7 +170,7 @@ typedef NSMutableDictionary<NSString *, NSString *> SpanDict;
             GSColor *color = [GSMarkupParser colorFromHex:colorHex];
             if (!color) {
                 color = [attributedString attribute:NSForegroundColorAttributeName atIndex:range.location effectiveRange:NULL];
-                color = [color colorWithAlphaComponent:0.33];
+                color = [color colorWithAlphaComponent:1.0 / 3];
             }
             CGFloat x = [span[GSSpanString_X] floatValue];
             CGFloat y = [span[GSSpanString_Y] floatValue];
