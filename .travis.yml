@@ -1,3 +1,6 @@
 language: objective-c
-xcode_project: GSMarkupParser.xcodeproj
-xcode_scheme: GSMarkupParserDemo_macOS
+osx_image: xcode8.3
+script:
+  - xcodebuild clean && xcodebuild build test -project GSMarkupParser.xcodeproj -scheme GSMarkupParserDemo_macOS GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
