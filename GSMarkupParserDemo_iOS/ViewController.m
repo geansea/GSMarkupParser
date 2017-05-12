@@ -29,6 +29,7 @@
         @"change <c hex=\"864\">text</c> color",
         @"support the <c hex=\"486\"><u>underline</u></c> color",
         @"support the <s hex=\"800\">strike</s> color",
+        @"support the <s><base move=\"0\">strike</base></s> on 10.3",
     ];
 }
 
