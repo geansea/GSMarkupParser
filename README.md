@@ -6,7 +6,7 @@ An attributed string builder from simple markup language similar to HTML/XML
 
 ## Screenshot
 
-![screenshot](https://github.com/geansea/GSMarkupParser/tree/master/GSMarkupParser/screenshot.png)
+![screenshot](https://github.com/geansea/GSMarkupParser/blob/master/screenshot.png?raw=true)
 
 ## Document
 
