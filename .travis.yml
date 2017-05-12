@@ -4,7 +4,6 @@ xcode_project: GSMarkupParser.xcodeproj
 matrix:
   include:
     - xcode_scheme: GSMarkupParserDemo_iOS
-      xcode_sdk: iphonesimulator8.1
-
+      xcode_sdk: iphonesimulator10.3
     - xcode_scheme: GSMarkupParserDemo_macOS
-      xcode_sdk: macosx10.8
+      xcode_sdk: macosx10.12
