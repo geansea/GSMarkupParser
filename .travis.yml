@@ -1,10 +1,5 @@
 language: objective-c
 osx_image: xcode8.3
-xcode_project: GSMarkupParser.xcodeproj
-xcode_scheme: GSMarkupParserDemo_macOS
-#matrix:
-#  include:
-#    - xcode_scheme: GSMarkupParserDemo_iOS
-#      xcode_sdk: iphonesimulator10.3
-#    - xcode_scheme: GSMarkupParserDemo_macOS
-#      xcode_sdk: macosx10.12
+script:
+    - xcodebuild clean && xcodebuild build -project GSMarkupParser.xcodeproj -scheme GSMarkupParserDemo_macOS
+    - xcodebuild clean && xcodebuild build -project GSMarkupParser.xcodeproj -scheme GSMarkupParserDemo_iOS
