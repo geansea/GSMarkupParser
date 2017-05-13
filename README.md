@@ -4,7 +4,7 @@
 
 An attributed string builder from simple markup language similar to HTML/XML
 
-Language: ![English][https://github.com/geansea/GSMarkupParser/blob/master/README.md] ![简体中文][https://github.com/geansea/GSMarkupParser/blob/master/README.chs.md]
+Language: [English](https://github.com/geansea/GSMarkupParser/blob/master/README.md) [简体中文](https://github.com/geansea/GSMarkupParser/blob/master/README.chs.md)
 
 ## Screenshot
 

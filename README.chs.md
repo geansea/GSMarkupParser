@@ -4,7 +4,7 @@
 
 将类 HTML/XML 标记文本解析为 NSAttributedString
 
-语言: ![English][https://github.com/geansea/GSMarkupParser/blob/master/README.md] ![简体中文][https://github.com/geansea/GSMarkupParser/blob/master/README.chs.md]
+语言: [English](https://github.com/geansea/GSMarkupParser/blob/master/README.md) [简体中文](https://github.com/geansea/GSMarkupParser/blob/master/README.chs.md)
 
 ## 效果截图
 
