@@ -4,6 +4,8 @@
 
 将类 HTML/XML 标记文本解析为 NSAttributedString
 
+语言: ![English][https://github.com/geansea/GSMarkupParser/blob/master/README.md] ![简体中文][https://github.com/geansea/GSMarkupParser/blob/master/README.chs.md]
+
 ## 效果截图
 
 ![macOS](https://raw.githubusercontent.com/geansea/GSMarkupParser/master/Screenshots/macOS.png)
@@ -29,71 +31,71 @@
 
 用法: `<font name="" size="">Text</font>`
 
-* **name** (可选): font name used for UIFont/NSFont. If not set, use current font name
-* **size** (可选): font size used for UIFont/NSFont. If not set, use current font size
+* **name** (可选): UIFont/NSFont 使用的字体名。如果未设置，使用当前字体名
+* **size** (可选): UIFont/NSFont 使用的字号。如果未设置，使用当前字号
 
 ### `<b>`
 
 用法: `<b>Text</b>`
 
-* If font is already bold, no effect
-* If font do not have bold trait, use stroke
-* For right effect, write `<b>` inside `<font>` is better
+* 如果当前字体已经是粗体，则不改变
+* 如果当前字体没有粗体，使用**描边**效果
+* 为确保效果正确，尽可能先设置 `<font>` 再设置 `<b>`
 
 ### `<i>`
 
 用法: `<i>Text</i>`
 
-* If font is already italic, no effect
-* If font do not have italic trait, use oblique
-* For right effect, write `<i>` inside `<font>` is better
+* 如果当前字体已经是斜体，则不改变
+* 如果当前字体没有斜体，使用**倾斜**效果
+* 为确保效果正确，尽可能先设置 `<font>` 再设置 `<i>`
 
 ### `<c>`
 
 用法: `<c hex="864">Text</i>`
 
-* **hex** (必选): hex string for color. Support RGB / ARGB / RRGGBB / AARRGGBB
+* **hex** (必选): 描述颜色的 16 进制字串。支持 RGB / ARGB / RRGGBB / AARRGGBB 几种形式
 
 ### `<u>`
 
 用法: `<u hex="864">Text</u>`
 
-* **hex** (可选): hex string for line color. If not set, use current color
+* **hex** (可选): 描述颜色的 16 进制字串。如果未设置，使用当前文字颜色
 
 ### `<s>`
 
 用法: `<s hex="864">Text</s>`
 
-* **hex** (可选): hex string for line color. If not set, use current color
+* **hex** (可选): 描述颜色的 16 进制字串。如果未设置，使用当前文字颜色
 
 ### `<shadow>`
 
 用法: `<shadow hex="864">Text</shadow>`
 
-* **hex** (可选): hex string for shadow color. If not set, use current color with alpha 0.33
-* **x** (可选): shadow offset x. If not set, use 0
-* **y** (可选): shadow offset x. If not set, use 0
-* **blur** (可选): shadow blur radius. If not set, use 0
+* **hex** (可选): 描述颜色的 16 进制字串。如果未设置，使用当前文字颜色，不透明度 1/3
+* **x** (可选): 阴影横向偏移。如果未设置，为 0
+* **y** (可选): 阴影纵向偏移。如果未设置，为 0
+* **blur** (可选): 阴影模糊半径。如果未设置，为 0
 
 ### `<base>`
 
 用法: `<base move="-2">Text</base>`
 
-* **move** (必选): move distance
+* **move** (必选): 基线移动距离
 
 ### `<a>`
 
 用法: `<a link="https://github.com">Text</a>`
 
-* **link** (必选): link address
+* **link** (必选): 链接地址
 
 ### `<img>`
 
 用法: `<img link="@icon" w="16" h="16" />`
 
-* **link** (必选): image link address. If begin with `@`, load image from bundle
-* **w** (必选): image width
-* **h** (必选): image height
+* **link** (必选): 图片链接。如果以 `@` 开头，从附带资源加载
+* **w** (必选): 图片宽度
+* **h** (必选): 图片高度
 
 ## TODO
 

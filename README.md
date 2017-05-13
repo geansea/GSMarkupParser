@@ -4,6 +4,8 @@
 
 An attributed string builder from simple markup language similar to HTML/XML
 
+Language: ![English][https://github.com/geansea/GSMarkupParser/blob/master/README.md] ![简体中文][https://github.com/geansea/GSMarkupParser/blob/master/README.chs.md]
+
 ## Screenshot
 
 ![macOS](https://raw.githubusercontent.com/geansea/GSMarkupParser/master/Screenshots/macOS.png)
@@ -37,7 +39,7 @@ Usage: `<font name="" size="">Text</font>`
 Usage: `<b>Text</b>`
 
 * If font is already bold, no effect
-* If font do not have bold trait, use stroke
+* If font do not have bold trait, use **stroke**
 * For right effect, write `<b>` inside `<font>` is better
 
 ### `<i>`
@@ -45,14 +47,14 @@ Usage: `<b>Text</b>`
 Usage: `<i>Text</i>`
 
 * If font is already italic, no effect
-* If font do not have italic trait, use oblique
+* If font do not have italic trait, use **oblique**
 * For right effect, write `<i>` inside `<font>` is better
 
 ### `<c>`
 
 Usage: `<c hex="864">Text</i>`
 
-* **hex** (Required): hex string for color. Support RGB / ARGB / RRGGBB / AARRGGBB
+* **hex** (Required): hex string for color. Support RGB / ARGB / RRGGBB / AARRGGBB format
 
 ### `<u>`
 
@@ -70,9 +72,9 @@ Usage: `<s hex="864">Text</s>`
 
 Usage: `<shadow hex="864">Text</shadow>`
 
-* **hex** (Optional): hex string for shadow color. If not set, use current color with alpha 0.33
+* **hex** (Optional): hex string for shadow color. If not set, use current color with alpha 1／3
 * **x** (Optional): shadow offset x. If not set, use 0
-* **y** (Optional): shadow offset x. If not set, use 0
+* **y** (Optional): shadow offset y. If not set, use 0
 * **blur** (Optional): shadow blur radius. If not set, use 0
 
 ### `<base>`
