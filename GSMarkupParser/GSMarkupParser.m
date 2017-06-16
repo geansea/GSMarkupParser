@@ -310,6 +310,10 @@ typedef NSMutableDictionary<NSString *, NSString *> SpanDict;
     // Push
     [_spans addObject:spanDict];
     [_spanStack addObject:spanDict];
+    if ([elementName isEqualToString:GSSpanString_Image]) {
+        unichar imageChar = NSAttachmentCharacter;
+        [_string appendString:[NSString stringWithCharacters:&imageChar length:1]];
+    }
 }
 
 - (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName {
@@ -327,7 +331,6 @@ typedef NSMutableDictionary<NSString *, NSString *> SpanDict;
 - (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string {
     SpanDict *currentSpan = _spanStack.lastObject;
     if ([currentSpan[GSSpanDictNameKey] isEqualToString:GSSpanString_Image]) {
-        
         return;
     }
     [_string appendString:string];
