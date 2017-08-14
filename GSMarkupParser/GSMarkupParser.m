@@ -99,6 +99,10 @@ typedef NSMutableDictionary<NSString *, NSString *> SpanDict;
 }
 
 - (NSAttributedString *)attributedString {
+    return [self attributedStringWithAttachmentGenerator:nil];
+}
+
+- (NSAttributedString *)attributedStringWithAttachmentGenerator:(AttachmentGenerator)generator {
     //
     // Default attributes
     //
@@ -207,8 +211,9 @@ typedef NSMutableDictionary<NSString *, NSString *> SpanDict;
                     attachment.bounds = GSRectMake(0, 0, width, height);
                     [attributedString addAttribute:NSAttachmentAttributeName value:attachment range:range];
                 }
-            } else if (link.length > 0 && width > 0 && height > 0) {
-                // Additional: Support web image
+            } else if (link.length > 0 && width > 0 && height > 0 && generator) {
+                NSTextAttachment *attachment = generator(link);
+                [attributedString addAttribute:NSAttachmentAttributeName value:attachment range:range];
             }
         }
     }
