@@ -212,8 +212,10 @@ typedef NSMutableDictionary<NSString *, NSString *> SpanDict;
                     [attributedString addAttribute:NSAttachmentAttributeName value:attachment range:range];
                 }
             } else if (link.length > 0 && width > 0 && height > 0 && generator) {
-                NSTextAttachment *attachment = generator(link);
-                [attributedString addAttribute:NSAttachmentAttributeName value:attachment range:range];
+                NSTextAttachment *attachment = generator(link, ceil(width), ceil(height));
+                if (attachment) {
+                    [attributedString addAttribute:NSAttachmentAttributeName value:attachment range:range];
+                }
             }
         }
     }

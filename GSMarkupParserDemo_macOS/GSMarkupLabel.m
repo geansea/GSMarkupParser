@@ -10,10 +10,15 @@
 
 @implementation GSMarkupLabel
 
-- (void)drawRect:(NSRect)dirtyRect {
-    [super drawRect:dirtyRect];
+- (instancetype)initWithFrame:(NSRect)frameRect {
+    if (self = [super initWithFrame:frameRect textContainer:nil]) {
+        self.editable = NO;
+    }
+    return self;
+}
+
+- (void)setMarkupText:(NSString *)markupText {
     
-    // Drawing code here.
 }
 
 @end

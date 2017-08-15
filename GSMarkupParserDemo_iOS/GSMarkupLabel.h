@@ -10,4 +10,7 @@
 
 @interface GSMarkupLabel : UITextView
 
+- (instancetype)initWithFrame:(CGRect)frame;
+- (void)setMarkupText:(NSString *)markupText;
+
 @end

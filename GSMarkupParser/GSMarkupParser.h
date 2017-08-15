@@ -10,7 +10,7 @@
 
 @class NSTextAttachment;
 
-typedef NSTextAttachment * (^AttachmentGenerator)(NSString *);
+typedef NSTextAttachment * (^AttachmentGenerator)(NSString *imageUrl, NSInteger width, NSInteger height);
 
 @interface GSMarkupParser : NSObject
 
