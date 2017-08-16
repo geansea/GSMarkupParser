@@ -25,7 +25,6 @@
         @"add <shadow x=\"2\" y=\"-1\" blur=\"2\">shadow</shadow>",
         @"move <base move=\"-2\"><font size=\"24\">baseline</font></base> to align middle",
         @"use <a link=\"https://github.com\"><c hex=\"24f\">link</c></a>",
-        @"add image <img link=\"@\" w=\"16\" h=\"16\" /> from bundle",
     ];
 }
 

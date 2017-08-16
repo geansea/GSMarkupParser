@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "GSMarkupParser.h"
+#import "GSMarkupLabel.h"
 
 @interface ViewController ()
 
@@ -29,7 +30,8 @@
         @"add <shadow x=\"2\" y=\"1\" blur=\"2\">shadow</shadow>",
         @"move <base move=\"-2\"><font size=\"24\">baseline</font></base> to align middle",
         @"use <a link=\"https://github.com\"><c hex=\"24f\">link</c></a>",
-        @"add image <img link=\"@\" w=\"16\" h=\"16\" /> from bundle",
+        @"add image <img link=\"@TestImage\" w=\"16\" h=\"16\" /> from bundle",
+        @"add image <img link=\"http://cn.bing.com/s/cn/cn_logo_serp.png\" w=\"16\" h=\"16\" /> from web",
         @"support the <s><base move=\"0\">strike</base></s> on 10.3",
     ];
 }
@@ -63,13 +65,12 @@
     }
     if (0 == indexPath.row % 2) {
         cell.backgroundColor = [[UIColor lightGrayColor] colorWithAlphaComponent:0.3];
-        cell.textLabel.attributedText = [GSMarkupParser attributedStringFromMarkupText:_markupTexts[indexPath.row / 2]];
+        cell.textLabel.text = _markupTexts[indexPath.row / 2];
     } else {
         cell.backgroundColor = [UIColor whiteColor];
-        cell.textLabel.text = _markupTexts[indexPath.row / 2];
+        cell.textLabel.attributedText = [GSMarkupParser attributedStringFromMarkupText:_markupTexts[indexPath.row / 2]];
     }
     return cell;
 }
-
 
 @end
