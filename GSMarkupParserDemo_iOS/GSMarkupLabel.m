@@ -26,7 +26,7 @@
 
 - (void)setImageUrl:(NSString *)imageUrl {
     _imageUrl = [imageUrl copy];
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:imageUrl]];
         UIImage *image = [UIImage imageWithData:imageData];
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -34,16 +34,6 @@
             [self.delegate attachmentChanged];
         });
     });
-}
-
-- (CGRect)attachmentBoundsForTextContainer:(nullable NSTextContainer *)textContainer proposedLineFragment:(CGRect)lineFrag glyphPosition:(CGPoint)position characterIndex:(NSUInteger)charIndex {
-    CGSize size = self.bounds.size;
-    CGFloat lineWidth = CGRectGetWidth(lineFrag);
-    if (size.width > lineWidth) {
-        size.height = ceil(lineWidth * size.height / size.width);
-        size.width = lineWidth;
-    }
-    return CGRectMake(0, 0, size.width, size.height);
 }
 
 @end
@@ -72,6 +62,12 @@
         return attachment;
     }];
 }
+
+- (void)drawRect:(CGRect)rect {
+    [super drawRect:rect];
+}
+
+#pragma mark - QRMarkupAttachmentDelegate
 
 - (void)attachmentChanged {
     [self setNeedsDisplay];

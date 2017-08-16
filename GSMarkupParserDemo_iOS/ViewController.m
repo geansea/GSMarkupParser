@@ -10,7 +10,7 @@
 #import "GSMarkupParser.h"
 #import "GSMarkupLabel.h"
 
-@interface ViewController ()
+@interface ViewController () <UITextViewDelegate>
 
 @end
 
@@ -31,9 +31,14 @@
         @"move <base move=\"-2\"><font size=\"24\">baseline</font></base> to align middle",
         @"use <a link=\"https://github.com\"><c hex=\"24f\">link</c></a>",
         @"add image <img link=\"@TestImage\" w=\"16\" h=\"16\" /> from bundle",
-        @"add image <img link=\"http://cn.bing.com/s/cn/cn_logo_serp.png\" w=\"16\" h=\"16\" /> from web",
         @"support the <s><base move=\"0\">strike</base></s> on 10.3",
     ];
+    
+    GSMarkupLabel *label = [[GSMarkupLabel alloc] initWithFrame:_footerView.bounds];
+    label.backgroundColor = [UIColor lightGrayColor];
+    [label setMarkupText:@"Web image sample: <a link=\"https://github.com\"><base move=\"-4\"><img link=\"https://github.com/fluidicon.png\" w=\"20\" h=\"20\" /></base> GitHub</a>"];
+    label.delegate = self;
+    [_footerView addSubview:label];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -71,6 +76,12 @@
         cell.textLabel.attributedText = [GSMarkupParser attributedStringFromMarkupText:_markupTexts[indexPath.row / 2]];
     }
     return cell;
+}
+
+#pragma mark - UITextViewDelegate
+
+- (BOOL)textView:(UITextView *)textView shouldInteractWithURL:(NSURL *)URL inRange:(NSRange)characterRange interaction:(UITextItemInteraction)interaction {
+    return YES;
 }
 
 @end

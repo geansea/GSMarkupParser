@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		930798C41F42C523009BA98E /* GSMarkupLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 930798C31F42C523009BA98E /* GSMarkupLabel.m */; };
-		930798C71F42C537009BA98E /* GSMarkupLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 930798C61F42C537009BA98E /* GSMarkupLabel.m */; };
 		93FCDA891EC3FB1C00272E7A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FCDA881EC3FB1C00272E7A /* AppDelegate.m */; };
 		93FCDA8C1EC3FB1C00272E7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FCDA8B1EC3FB1C00272E7A /* main.m */; };
 		93FCDA8F1EC3FB1C00272E7A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FCDA8E1EC3FB1C00272E7A /* ViewController.m */; };
@@ -27,8 +26,6 @@
 /* Begin PBXFileReference section */
 		930798C21F42C523009BA98E /* GSMarkupLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSMarkupLabel.h; sourceTree = "<group>"; };
 		930798C31F42C523009BA98E /* GSMarkupLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSMarkupLabel.m; sourceTree = "<group>"; };
-		930798C51F42C537009BA98E /* GSMarkupLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSMarkupLabel.h; sourceTree = "<group>"; };
-		930798C61F42C537009BA98E /* GSMarkupLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSMarkupLabel.m; sourceTree = "<group>"; };
 		93FCDA7E1EC2B64E00272E7A /* GSMarkupParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GSMarkupParser.h; path = GSMarkupParser/GSMarkupParser.h; sourceTree = "<group>"; };
 		93FCDA7F1EC2B64E00272E7A /* GSMarkupParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GSMarkupParser.m; path = GSMarkupParser/GSMarkupParser.m; sourceTree = "<group>"; };
 		93FCDA841EC3FB1C00272E7A /* GSMarkupParserDemo_macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GSMarkupParserDemo_macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,8 +102,6 @@
 				93FCDA881EC3FB1C00272E7A /* AppDelegate.m */,
 				93FCDA8D1EC3FB1C00272E7A /* ViewController.h */,
 				93FCDA8E1EC3FB1C00272E7A /* ViewController.m */,
-				930798C51F42C537009BA98E /* GSMarkupLabel.h */,
-				930798C61F42C537009BA98E /* GSMarkupLabel.m */,
 				93FCDA901EC3FB1C00272E7A /* Assets.xcassets */,
 				93FCDA921EC3FB1C00272E7A /* Main.storyboard */,
 				93FCDA951EC3FB1C00272E7A /* Info.plist */,
@@ -254,7 +249,6 @@
 				93FCDA8C1EC3FB1C00272E7A /* main.m in Sources */,
 				93FCDA991EC3FB4C00272E7A /* GSMarkupParser.m in Sources */,
 				93FCDA891EC3FB1C00272E7A /* AppDelegate.m in Sources */,
-				930798C71F42C537009BA98E /* GSMarkupLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

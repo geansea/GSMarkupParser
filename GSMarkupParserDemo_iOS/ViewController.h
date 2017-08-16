@@ -11,6 +11,7 @@
 @interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (copy) NSArray<NSString *> *markupTexts;
+@property (weak, nonatomic) IBOutlet UIView *footerView;
 
 @end
 
