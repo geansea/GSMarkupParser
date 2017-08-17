@@ -11,7 +11,7 @@
 
 @protocol QRMarkupAttachmentDelegate <NSObject>
 
-- (void)attachmentChanged;
+- (void)attachmentChanged:(NSTextAttachment *)attachment;
 
 @end
 
@@ -31,7 +31,7 @@
         UIImage *image = [UIImage imageWithData:imageData];
         dispatch_async(dispatch_get_main_queue(), ^{
             self.image = image;
-            [self.delegate attachmentChanged];
+            [self.delegate attachmentChanged:self];
         });
     });
 }
@@ -69,8 +69,15 @@
 
 #pragma mark - QRMarkupAttachmentDelegate
 
-- (void)attachmentChanged {
-    [self setNeedsDisplay];
+- (void)attachmentChanged:(NSTextAttachment *)attachment {
+    __block NSRange attachmentRange = NSMakeRange(0, 0);
+    [self.textStorage enumerateAttribute:NSAttachmentAttributeName inRange:NSMakeRange(0, self.textStorage.length) options:0 usingBlock:^(id value, NSRange range, BOOL *stop) {
+        if (attachment == value) {
+            attachmentRange = range;
+            *stop = YES;
+        }
+    }];
+    [self.layoutManager invalidateDisplayForCharacterRange:attachmentRange];
 }
 
 @end
