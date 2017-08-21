@@ -9,6 +9,7 @@
 ## 效果截图
 
 ![macOS](https://raw.githubusercontent.com/geansea/GSMarkupParser/master/Screenshots/macOS.png)
+![iOS](https://raw.githubusercontent.com/geansea/GSMarkupParser/master/Screenshots/iOS.png)
 
 ## 文档
 
@@ -99,5 +100,5 @@
 
 ## TODO
 
-* 添加一个简单的网络图片的支持
+* 添加一个简单的网络图片的支持（完成，详见 iOS Demo）
 * 支持更多标签

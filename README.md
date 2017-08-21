@@ -9,6 +9,7 @@ Language: [English](https://github.com/geansea/GSMarkupParser/blob/master/README
 ## Screenshot
 
 ![macOS](https://raw.githubusercontent.com/geansea/GSMarkupParser/master/Screenshots/macOS.png)
+![iOS](https://raw.githubusercontent.com/geansea/GSMarkupParser/master/Screenshots/iOS.png)
 
 ## Document
 
@@ -99,5 +100,5 @@ Usage: `<img link="@icon" w="16" h="16" />`
 
 ## TODO
 
-* Give a simple support for image from web
+* Give a simple support for image from web (Done, see iOS Demo)
 * Support more tags
