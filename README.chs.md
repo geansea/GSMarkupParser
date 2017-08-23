@@ -2,14 +2,16 @@
 
 ![build](https://travis-ci.org/geansea/GSMarkupParser.svg?branch=master)
 
-将类 HTML/XML 标记文本解析为 NSAttributedString
+将类 HTML/XML 标记文本解析为 NSAttributedString。
 
-语言: [English](https://github.com/geansea/GSMarkupParser/blob/master/README.md) [简体中文](https://github.com/geansea/GSMarkupParser/blob/master/README.chs.md)
+推荐一个 UILabel 的替代品 [GSAttributedLabel](https://github.com/geansea/GSAttributedLabel)。
+
+语言: [English](./README.md) [简体中文](./README.chs.md)
 
 ## 效果截图
 
-![macOS](https://raw.githubusercontent.com/geansea/GSMarkupParser/master/Screenshots/macOS.png)
-![iOS](https://raw.githubusercontent.com/geansea/GSMarkupParser/master/Screenshots/iOS.png)
+![macOS](./Screenshots/macOS.png)
+![iOS](./Screenshots/iOS.png)
 
 ## 文档
 

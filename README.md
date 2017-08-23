@@ -2,14 +2,16 @@
 
 ![build](https://travis-ci.org/geansea/GSMarkupParser.svg?branch=master)
 
-An attributed string builder from simple markup language similar to HTML/XML
+An attributed string builder from simple markup language similar to HTML/XML.
 
-Language: [English](https://github.com/geansea/GSMarkupParser/blob/master/README.md) [简体中文](https://github.com/geansea/GSMarkupParser/blob/master/README.chs.md)
+For a replacement of UILabel, see [GSAttributedLabel](https://github.com/geansea/GSAttributedLabel).
+
+Language: [English](./README.md) [简体中文](./README.chs.md)
 
 ## Screenshot
 
-![macOS](https://raw.githubusercontent.com/geansea/GSMarkupParser/master/Screenshots/macOS.png)
-![iOS](https://raw.githubusercontent.com/geansea/GSMarkupParser/master/Screenshots/iOS.png)
+![macOS](./Screenshots/macOS.png)
+![iOS](./Screenshots/iOS.png)
 
 ## Document
 
