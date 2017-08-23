@@ -9,20 +9,20 @@
 #import "GSMarkupLabel.h"
 #import "GSMarkupParser.h"
 
-@protocol QRMarkupAttachmentDelegate <NSObject>
+@protocol GSMarkupAttachmentDelegate <NSObject>
 
-- (void)attachmentChanged:(NSTextAttachment *)attachment;
+- (void)attachmentNeedsDisplay:(NSTextAttachment *)attachment;
 
 @end
 
-@interface QRMarkupAttachment : NSTextAttachment
+@interface GSMarkupAttachment : NSTextAttachment
 
 @property (nonatomic, copy)   NSString *imageUrl;
-@property (nonatomic, weak)   id<QRMarkupAttachmentDelegate> delegate;
+@property (nonatomic, weak)   id<GSMarkupAttachmentDelegate> delegate;
 
 @end
 
-@implementation QRMarkupAttachment
+@implementation GSMarkupAttachment
 
 - (void)setImageUrl:(NSString *)imageUrl {
     _imageUrl = [imageUrl copy];
@@ -31,14 +31,14 @@
         UIImage *image = [UIImage imageWithData:imageData];
         dispatch_async(dispatch_get_main_queue(), ^{
             self.image = image;
-            [self.delegate attachmentChanged:self];
+            [self.delegate attachmentNeedsDisplay:self];
         });
     });
 }
 
 @end
 
-@interface GSMarkupLabel () <QRMarkupAttachmentDelegate>
+@interface GSMarkupLabel () <GSMarkupAttachmentDelegate>
 
 @end
 
@@ -54,7 +54,7 @@
 - (void)setMarkupText:(NSString *)markupText {
     GSMarkupParser *parser = [[GSMarkupParser alloc] initWithMarkupText:markupText];
     self.attributedText = [parser attributedStringWithAttachmentGenerator:^NSTextAttachment *(NSString *imageUrl, NSInteger width, NSInteger height) {
-        QRMarkupAttachment *attachment = [[QRMarkupAttachment alloc] init];
+        GSMarkupAttachment *attachment = [[GSMarkupAttachment alloc] init];
         attachment.image = nil;
         attachment.bounds = CGRectMake(0, 0, width, height);
         attachment.imageUrl = imageUrl;
@@ -67,9 +67,9 @@
     [super drawRect:rect];
 }
 
-#pragma mark - QRMarkupAttachmentDelegate
+#pragma mark - GSMarkupAttachmentDelegate
 
-- (void)attachmentChanged:(NSTextAttachment *)attachment {
+- (void)attachmentNeedsDisplay:(NSTextAttachment *)attachment {
     __block NSRange attachmentRange = NSMakeRange(0, 0);
     [self.textStorage enumerateAttribute:NSAttachmentAttributeName inRange:NSMakeRange(0, self.textStorage.length) options:0 usingBlock:^(id value, NSRange range, BOOL *stop) {
         if (attachment == value) {

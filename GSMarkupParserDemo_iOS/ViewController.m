@@ -12,6 +12,8 @@
 
 @interface ViewController () <UITextViewDelegate>
 
+@property (copy) NSArray<NSString *> *markupTexts;
+
 @end
 
 @implementation ViewController
